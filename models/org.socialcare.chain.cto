@@ -1,0 +1,11 @@
+namespace org.socialcare.chain
+
+transaction UserTransaction {
+  o String id
+  o String name
+  o String birthday
+  o String motherName
+  o String rg
+  o String cpf
+  o String sus
+}

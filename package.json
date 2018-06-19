@@ -1,0 +1,23 @@
+{
+  "name": "user",
+  "version": "0.0.1",
+  "description": "Occurrences references database",
+  "scripts": {
+    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/user.bna",
+    "pretest": "npm run lint",
+    "lint": "eslint ."
+  },
+  "author": "SocialCare",
+  "email": "x@x.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "^0.19.1",
+    "composer-cli": "^0.19.1",
+    "composer-client": "^0.19.1",
+    "composer-common": "^0.19.1",
+    "composer-connector-embedded": "^0.19.1",
+    "eslint": "latest",
+    "nyc": "latest",
+    "mkdirp": "latest"
+  }
+}
